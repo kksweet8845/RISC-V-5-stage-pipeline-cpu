@@ -1,0 +1,3298 @@
+# Loading project test
+# reading /home/nober/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project test
+# Compile of CPU.v failed with 3 errors.
+# Compile of SRAM.v was successful.
+# Compile of top.v failed with 3 errors.
+# Compile of top_tb.v failed with 3 errors.
+# 4 compiles, 3 failed with 9 errors.
+# Compile of CPU.v was successful.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.top_tb
+# vsim work.top_tb 
+# Start time: 00:47:17 on Jan 13,2021
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+add wave -position end  sim:/top_tb/clk
+add wave -position end  sim:/top_tb/rst
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/instr_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/instr_addr
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_IF_ID_reg/instr_in_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_IF_ID_reg/pc_out_in
+add wave -position 4  sim:/top_tb/TOP/i_CPU/i_IF_ID_reg/IF_ID_reg_RegWrite
+add wave -position 4  sim:/top_tb/TOP/i_CPU/i_IF_ID_reg/pc_out_in
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/opcode
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/RegWrite
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/ImmType
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/PCToRegSrc
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/RDSrc
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/MemRead
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/MemWrite
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/MemToReg
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/ALUSrc
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Decoder/ALUOp
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Distributor/instr_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Distributor/opcode
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Distributor/rs1_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Distributor/rs2_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Distributor/rd_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Distributor/funct7
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_Distributor/funct3
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/rs2_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/rs1_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/rd_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/Din
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/Rs1Data
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/Rs2Data
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/register
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ImmGen/opcode
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ImmGen/funct7
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ImmGen/rs2_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ImmGen/rs1_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ImmGen/funct3
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ImmGen/rd_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ImmGen/ImmType
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ImmGen/Imm_src
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/MemToReg
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/RegWrite
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/MemToReg_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/RegWrite_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/RDSrc
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/MemRead
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/MemWrite
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/RDSrc_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/MemRead_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/MemWrite_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/PCToRegSrc
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/ALUSrc
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/ALUOp
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/PCToRegSrc_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/ALUSrc_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/ALUOp_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/opcode
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/ID_pc
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/Rs1Data
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/Rs2Data
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/Imm_src
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/funct3
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/funct7
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/rd_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/rs1_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/rs2_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/opcode_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/ID_pc_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/Rs1Data_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/Rs2Data_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/Imm_src_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/funct3_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/funct7_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/rd_addr_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/rs1_addr_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ID_EX_reg/rs2_addr_out
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ALU/rs1_data
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ALU/rs2_or_imm_data
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ALU/rd_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ALU/ALUCtrl
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ALU/result
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_ALU/zero_flag
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/MemToReg
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/RegWrite
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/MemToReg_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/RegWrite_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/RDSrc
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/MemRead
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/MemWrite
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/RDSrc_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/MemRead_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/MemWrite_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/pc_to_reg
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/alu_out_in
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/rs2_data
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/rd_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/rs2_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/rs2_addr_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/pc_to_reg_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/alu_in_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/rs2_data_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_EX_MEM_reg/rd_addr_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/MemToReg
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/RegWrite
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/MemToReg_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/RegWrite_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/MEM_rd_data
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/DM_out_in
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/MEM_rd_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/MEM_rd_data_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/DM_in_out
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_MEM_WB_reg/MEM_rd_addr_out
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_DataMem/MemRead
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_DataMem/MemWrite
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_DataMem/alu_out_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_DataMem/rs2_data
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_DataMem/data_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_DataMem/data_in
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_DataMem/data_read
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_DataMem/data_write
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/rd_addr
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/RegWrite
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/Din
+add wave -position end  sim:/top_tb/TOP/i_CPU/i_RegisterFile/register
+add wave -position 46  sim:/top_tb/TOP/i_CPU/rs2_or_imm_mux/result
+add wave -position 46  sim:/top_tb/TOP/i_CPU/forward_rs2_mux/result
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position 47  sim:/top_tb/TOP/i_CPU/forward_rs2_mux/sel
+add wave -position 47  sim:/top_tb/TOP/i_CPU/forward_rs2_mux/zero_path
+add wave -position 47  sim:/top_tb/TOP/i_CPU/forward_rs2_mux/one_path
+add wave -position 47  sim:/top_tb/TOP/i_CPU/forward_rs2_mux/two_path
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff6, expect = fffffff0
+# DM[8193] = fffffff9, expect = fffffff8
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000000, expect = 00000001
+# DM[8197] = 777770f0, expect = 78787878
+# DM[8198] = 00000012, expect = 000091a2
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfa9d, expect = fefcfefd
+# DM[8201] = 00000000, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = fffffcad, expect = 00000004
+# DM[8205] = 00000003, pass
+# DM[8206] = aaaab424, expect = 000001a6
+# DM[8207] = 00000599, expect = 00000ec6
+# DM[8208] = 1234601e, expect = 2468b7a8
+# DM[8209] = b09e58a0, expect = 5dbf9f00
+# DM[8210] = 00000f00, expect = 00012b38
+# DM[8211] = ffd30b29, expect = fa2817b7
+# DM[8212] = ff019000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = 000f0000, expect = 000000f0
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = fffeaafd, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff001, expect = fffff000
+# DM[8231] = fffff001, expect = fffff000
+# DM[8232] = fffff001, expect = fffff000
+# DM[8233] = fffff001, expect = fffff000
+# DM[8234] = fffff001, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          27 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 27600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v failed with 1 errors.
+# Compile of SRAM.v was successful.
+# Compile of top.v failed with 1 errors.
+# Compile of top_tb.v failed with 1 errors.
+# 4 compiles, 3 failed with 3 errors.
+# Compile of CPU.v was successful.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = fff3d900, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff000, pass
+# DM[8232] = fffff000, pass
+# DM[8233] = fffff000, pass
+# DM[8234] = fffff000, pass
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           3 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 29560 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position 4  sim:/top_tb/TOP/i_CPU/pc_in
+add wave -position 4  sim:/top_tb/TOP/i_CPU/pc_in
+add wave -position 5  sim:/top_tb/TOP/i_CPU/pc_out
+add wave -position 5  sim:/top_tb/TOP/i_CPU/pc_out
+add wave -position 6  sim:/top_tb/TOP/i_CPU/pc_normal_out
+add wave -position 7  sim:/top_tb/TOP/i_CPU/i_BranchCtrl/branchCtrl
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = fff3d900, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff000, pass
+# DM[8232] = fffff000, pass
+# DM[8233] = fffff000, pass
+# DM[8234] = fffff000, pass
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           3 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 29560 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = fff3d900, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff000, pass
+# DM[8232] = fffff000, pass
+# DM[8233] = fffff000, pass
+# DM[8234] = fffff000, pass
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           3 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 29560 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position 7  sim:/top_tb/TOP/i_CPU/i_BranchCtrl/funct3
+add wave -position 8  sim:/top_tb/TOP/i_CPU/i_BranchCtrl/opcode
+add wave -position 7  sim:/top_tb/TOP/i_CPU/i_BranchCtrl/ALUOp
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = fff3d900, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff000, pass
+# DM[8232] = fffff000, pass
+# DM[8233] = fffff000, pass
+# DM[8234] = fffff000, pass
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           3 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 29560 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position 11  sim:/top_tb/TOP/i_CPU/i_HazardCtrl/ID_EX_reg_flush
+add wave -position 11  sim:/top_tb/TOP/i_CPU/i_HazardCtrl/IF_ID_reg_RegWrite
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = fff3d900, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff000, pass
+# DM[8232] = fffff000, pass
+# DM[8233] = fffff000, pass
+# DM[8234] = fffff000, pass
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           3 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 29560 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position 15  sim:/top_tb/TOP/i_CPU/i_IF_ID_reg/pc_in_out
+# Compile of CPU.v was successful.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff3fd000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff003, expect = fffff000
+# DM[8230] = fffff003, expect = fffff000
+# DM[8231] = fffff00f, expect = fffff000
+# DM[8232] = fffff00f, expect = fffff000
+# DM[8233] = fffff00f, expect = fffff000
+# DM[8234] = fffff00f, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff005, expect = fffff004
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           8 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 15600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = fff3d900, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff000, pass
+# DM[8232] = fffff000, pass
+# DM[8233] = fffff000, pass
+# DM[8234] = fffff000, pass
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           3 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 29560 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff3fd000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff003, expect = fffff000
+# DM[8230] = fffff003, expect = fffff000
+# DM[8231] = fffff00f, expect = fffff000
+# DM[8232] = fffff00f, expect = fffff000
+# DM[8233] = fffff00f, expect = fffff000
+# DM[8234] = fffff00f, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff005, expect = fffff004
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           8 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 15600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of CPU.v failed with 2 errors.
+# Compile of SRAM.v was successful.
+# Compile of top.v failed with 2 errors.
+# Compile of top_tb.v failed with 2 errors.
+# 4 compiles, 3 failed with 6 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of SRAM.v was successful.
+# Compile of top.v failed with 1 errors.
+# Compile of top_tb.v failed with 1 errors.
+# 4 compiles, 3 failed with 3 errors.
+# Compile of CPU.v was successful.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# DM[8192] = xxxxxxxx, expect = fffffff0
+# DM[8193] = xxxxxxxx, expect = fffffff8
+# DM[8194] = xxxxxxxx, expect = 00000008
+# DM[8195] = xxxxxxxx, expect = 00000001
+# DM[8196] = xxxxxxxx, expect = 00000001
+# DM[8197] = xxxxxxxx, expect = 78787878
+# DM[8198] = xxxxxxxx, expect = 000091a2
+# DM[8199] = xxxxxxxx, expect = 00000003
+# DM[8200] = xxxxxxxx, expect = fefcfefd
+# DM[8201] = xxxxxxxx, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = xxxxxxxx, expect = 00000004
+# DM[8205] = xxxxxxxx, expect = 00000003
+# DM[8206] = xxxxxxxx, expect = 000001a6
+# DM[8207] = xxxxxxxx, expect = 00000ec6
+# DM[8208] = xxxxxxxx, expect = 2468b7a8
+# DM[8209] = xxxxxxxx, expect = 5dbf9f00
+# DM[8210] = xxxxxxxx, expect = 00012b38
+# DM[8211] = xxxxxxxx, expect = fa2817b7
+# DM[8212] = xxxxxxxx, expect = ff000000
+# DM[8213] = xxxxxxxx, expect = 000f0000
+# DM[8214] = xxxxxxxx, expect = 0000f000
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = xxxxxxxx, expect = 000000f0
+# DM[8217] = xxxxxxxx, expect = 0000000f
+# DM[8218] = xxxxxxxx, expect = 000f0000
+# DM[8219] = xxxxxxxx, expect = 000f0000
+# DM[8220] = xxxxxxxx, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = xxxxxxxx, expect = 000f0000
+# DM[8223] = xxxxxxxx, expect = 0000000f
+# DM[8224] = xxxxxxxx, expect = 000000f0
+# DM[8225] = xxxxxxxx, expect = 00000f00
+# DM[8226] = xxxxxxxx, expect = 000f0003
+# DM[8227] = xxxxxxxx, expect = 000f0002
+# DM[8228] = xxxxxxxx, expect = 000f0001
+# DM[8229] = xxxxxxxx, expect = fffff000
+# DM[8230] = xxxxxxxx, expect = fffff000
+# DM[8231] = xxxxxxxx, expect = fffff000
+# DM[8232] = xxxxxxxx, expect = fffff000
+# DM[8233] = xxxxxxxx, expect = fffff000
+# DM[8234] = xxxxxxxx, expect = fffff000
+# DM[8235] = xxxxxxxx, expect = 1357a040
+# DM[8236] = xxxxxxxx, expect = 13578000
+# DM[8237] = xxxxxxxx, expect = fffff004
+# SIM_END(16383) = xxxxxxxx, expect = ffffffff
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          46 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(83)
+#    Time: 2000020 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 83
+# Compile of CPU.v was successful.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of CPU.v was successful.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff3fd000, expect = ff000000
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff003, expect = fffff000
+# DM[8230] = fffff003, expect = fffff000
+# DM[8231] = fffff00f, expect = fffff000
+# DM[8232] = fffff00f, expect = fffff000
+# DM[8233] = fffff00f, expect = fffff000
+# DM[8234] = fffff00f, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff005, expect = fffff004
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           8 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 15600 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful with warnings.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position 13  sim:/top_tb/TOP/i_CPU/IF_ID_reg_flush
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position 18  sim:/top_tb/TOP/i_CPU/i_IF_ID_reg/instr_out_in
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful with warnings.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# DM[8192] = xxxxxxxx, expect = fffffff0
+# DM[8193] = xxxxxxxx, expect = fffffff8
+# DM[8194] = xxxxxxxx, expect = 00000008
+# DM[8195] = xxxxxxxx, expect = 00000001
+# DM[8196] = xxxxxxxx, expect = 00000001
+# DM[8197] = xxxxxxxx, expect = 78787878
+# DM[8198] = xxxxxxxx, expect = 000091a2
+# DM[8199] = xxxxxxxx, expect = 00000003
+# DM[8200] = xxxxxxxx, expect = fefcfefd
+# DM[8201] = xxxxxxxx, expect = 10305070
+# DM[8202] = xxxxxxxx, expect = cccccccc
+# DM[8203] = xxxxxxxx, expect = 00000d9d
+# DM[8204] = xxxxxxxx, expect = 00000004
+# DM[8205] = xxxxxxxx, expect = 00000003
+# DM[8206] = xxxxxxxx, expect = 000001a6
+# DM[8207] = xxxxxxxx, expect = 00000ec6
+# DM[8208] = xxxxxxxx, expect = 2468b7a8
+# DM[8209] = xxxxxxxx, expect = 5dbf9f00
+# DM[8210] = xxxxxxxx, expect = 00012b38
+# DM[8211] = xxxxxxxx, expect = fa2817b7
+# DM[8212] = xxxxxxxx, expect = ff000000
+# DM[8213] = xxxxxxxx, expect = 000f0000
+# DM[8214] = xxxxxxxx, expect = 0000f000
+# DM[8215] = xxxxxxxx, expect = 00000f00
+# DM[8216] = xxxxxxxx, expect = 000000f0
+# DM[8217] = xxxxxxxx, expect = 0000000f
+# DM[8218] = xxxxxxxx, expect = 000f0000
+# DM[8219] = xxxxxxxx, expect = 000f0000
+# DM[8220] = xxxxxxxx, expect = 000f0000
+# DM[8221] = xxxxxxxx, expect = 000f0000
+# DM[8222] = xxxxxxxx, expect = 000f0000
+# DM[8223] = xxxxxxxx, expect = 0000000f
+# DM[8224] = xxxxxxxx, expect = 000000f0
+# DM[8225] = xxxxxxxx, expect = 00000f00
+# DM[8226] = xxxxxxxx, expect = 000f0003
+# DM[8227] = xxxxxxxx, expect = 000f0002
+# DM[8228] = xxxxxxxx, expect = 000f0001
+# DM[8229] = xxxxxxxx, expect = fffff000
+# DM[8230] = xxxxxxxx, expect = fffff000
+# DM[8231] = xxxxxxxx, expect = fffff000
+# DM[8232] = xxxxxxxx, expect = fffff000
+# DM[8233] = xxxxxxxx, expect = fffff000
+# DM[8234] = xxxxxxxx, expect = fffff000
+# DM[8235] = xxxxxxxx, expect = 1357a040
+# DM[8236] = xxxxxxxx, expect = 13578000
+# DM[8237] = xxxxxxxx, expect = fffff004
+# SIM_END(16383) = xxxxxxxx, expect = ffffffff
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has          46 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(83)
+#    Time: 2000020 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 83
+# Compile of CPU.v was successful with warnings.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful with warnings.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = 6666f752, expect = cccccccc
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff000, pass
+# DM[8230] = fffff000, pass
+# DM[8231] = fffff000, pass
+# DM[8232] = fffff000, pass
+# DM[8233] = fffff000, pass
+# DM[8234] = fffff000, pass
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           1 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146 us  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful with warnings.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful with warnings.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position 12  sim:/top_tb/TOP/i_CPU/i_HazardCtrl/IM_flush
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v failed with 1 errors.
+# Compile of SRAM.v was successful.
+# Compile of top.v failed with 1 errors.
+# Compile of top_tb.v failed with 1 errors.
+# 4 compiles, 3 failed with 3 errors.
+# Compile of CPU.v was successful with warnings.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+add wave -position 16  sim:/top_tb/TOP/i_CPU/ID_instr_in_out
+add wave -position 16 sim:/top_tb/TOP/i_CPU/zero_instr_mux/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful with warnings.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff002, expect = fffff000
+# DM[8230] = fffff002, expect = fffff000
+# DM[8231] = fffff002, expect = fffff000
+# DM[8232] = fffff00c, expect = fffff000
+# DM[8233] = fffff002, expect = fffff000
+# DM[8234] = fffff00c, expect = fffff000
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  OOPS!!                **      / X,X  | 
+#         **                        **    /_____   | 
+#         **  Simulation Failed!!   **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+#          Totally has           6 errors                     
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Compile of CPU.v was successful with warnings.
+# Compile of SRAM.v was successful.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.top_tb
+# Loading work.top
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.adder
+# Loading work.mux_binary
+# Loading work.HazardCtrl
+# Loading work.IF_ID_reg
+# Loading work.Distributor
+# Loading work.RegisterFile
+# Loading work.Decoder
+# Loading work.mux_binary_1
+# Loading work.ImmGen
+# Loading work.mux_quadra
+# Loading work.ID_EX_reg
+# Loading work.ForwardCtrl
+# Loading work.mux_triple
+# Loading work.ALUCtrl
+# Loading work.ALU
+# Loading work.BranchCtrl
+# Loading work.EX_MEM_reg
+# Loading work.DataMem
+# Loading work.MEM_WB_reg
+# Loading work.mux_triple_neg_clk
+# Loading work.SRAM
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v Line: 49
+run -all
+# 
+# Done
+# 
+# DM[8192] = fffffff0, pass
+# DM[8193] = fffffff8, pass
+# DM[8194] = 00000008, pass
+# DM[8195] = 00000001, pass
+# DM[8196] = 00000001, pass
+# DM[8197] = 78787878, pass
+# DM[8198] = 000091a2, pass
+# DM[8199] = 00000003, pass
+# DM[8200] = fefcfefd, pass
+# DM[8201] = 10305070, pass
+# DM[8202] = cccccccc, pass
+# DM[8203] = 00000d9d, pass
+# DM[8204] = 00000004, pass
+# DM[8205] = 00000003, pass
+# DM[8206] = 000001a6, pass
+# DM[8207] = 00000ec6, pass
+# DM[8208] = 2468b7a8, pass
+# DM[8209] = 5dbf9f00, pass
+# DM[8210] = 00012b38, pass
+# DM[8211] = fa2817b7, pass
+# DM[8212] = ff000000, pass
+# DM[8213] = 000f0000, pass
+# DM[8214] = 0000f000, pass
+# DM[8215] = 00000f00, pass
+# DM[8216] = 000000f0, pass
+# DM[8217] = 0000000f, pass
+# DM[8218] = 000f0000, pass
+# DM[8219] = 000f0000, pass
+# DM[8220] = 000f0000, pass
+# DM[8221] = 000f0000, pass
+# DM[8222] = 000f0000, pass
+# DM[8223] = 0000000f, pass
+# DM[8224] = 000000f0, pass
+# DM[8225] = 00000f00, pass
+# DM[8226] = 000f0003, pass
+# DM[8227] = 000f0002, pass
+# DM[8228] = 000f0001, pass
+# DM[8229] = fffff000, pass
+# DM[8230] = fffff000, pass
+# DM[8231] = fffff000, pass
+# DM[8232] = fffff000, pass
+# DM[8233] = fffff000, pass
+# DM[8234] = fffff000, pass
+# DM[8235] = 1357a040, pass
+# DM[8236] = 13578000, pass
+# DM[8237] = fffff004, pass
+# 
+# 
+# 
+# 
+#         ****************************               
+#         **                        **       |__||  
+#         **  Congratulations !!    **      / O.O  | 
+#         **                        **    /_____   | 
+#         **  Simulation PASS!!     **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w| 
+#         ****************************   \m___m__|_|
+# 
+# 
+# ** Note: $finish    : /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v(68)
+#    Time: 146040 ns  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/top_tb.v line 68
+# Project file /home/nober/git/CO/VLSI_final_project/F74064054_v5/F74064054_v5/src/test.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# End time: 20:39:12 on Jan 16,2021, Elapsed time: 91:51:55
+# Errors: 0, Warnings: 1

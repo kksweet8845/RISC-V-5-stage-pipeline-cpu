@@ -1,0 +1,21 @@
+D:/School/CO/HW5/F74064054/src/top.v {0 {vlog -work work -stats=none D:/School/CO/HW5/F74064054/src/top.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}} D:/School/CO/HW5/F74064054/src/SRAM.v {0 {vlog -work work -stats=none D:/School/CO/HW5/F74064054/src/SRAM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}} D:/School/CO/HW5/F74064054/src/top_tb.v {0 {vlog -work work -stats=none D:/School/CO/HW5/F74064054/src/top_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}} D:/School/CO/HW5/F74064054/src/CPU.v {0 {vlog -work work -stats=none D:/School/CO/HW5/F74064054/src/CPU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: (vlog-66) Execution of vlib failed. Please check the error log for more details.
+
+
+} {3.0 4.0} {}}

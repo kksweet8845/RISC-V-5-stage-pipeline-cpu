@@ -1,0 +1,71 @@
+D:/School/CO/HW5/F74064054/src/top.v {1 {vlog -work work -stats=none D:/School/CO/HW5/F74064054/src/top.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU
+-- Compiling module ALUCtrl
+-- Compiling module BranchCtrl
+-- Compiling module DataMem
+-- Compiling module Decoder
+-- Compiling module Distributor
+-- Compiling module ForwardCtrl
+-- Compiling module HazardCtrl
+-- Compiling module ImmGen
+-- Compiling module ProgramCounter
+-- Compiling module IF_ID_reg
+-- Compiling module ID_EX_reg
+-- Compiling module EX_MEM_reg
+-- Compiling module MEM_WB_reg
+-- Compiling module RegisterFile
+-- Compiling module CPU
+-- Compiling module mux_binary
+-- Compiling module mux_binary_1
+-- Compiling module mux_triple_neg_clk
+-- Compiling module mux_triple
+-- Compiling module adder
+-- Compiling module SRAM
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} D:/School/CO/HW5/F74064054/src/SRAM.v {1 {vlog -work work -stats=none D:/School/CO/HW5/F74064054/src/SRAM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module SRAM
+
+Top level modules:
+	SRAM
+
+} {} {}} D:/School/CO/HW5/F74064054/src/CPU.v {1 {vlog -work work -stats=none D:/School/CO/HW5/F74064054/src/CPU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU
+-- Compiling module ALUCtrl
+-- Compiling module BranchCtrl
+-- Compiling module DataMem
+-- Compiling module Decoder
+-- Compiling module Distributor
+-- Compiling module ForwardCtrl
+-- Compiling module HazardCtrl
+-- Compiling module ImmGen
+-- Compiling module ProgramCounter
+-- Compiling module IF_ID_reg
+-- Compiling module ID_EX_reg
+-- Compiling module EX_MEM_reg
+-- Compiling module MEM_WB_reg
+-- Compiling module RegisterFile
+-- Compiling module CPU
+-- Compiling module mux_binary
+-- Compiling module mux_binary_1
+-- Compiling module mux_triple_neg_clk
+-- Compiling module mux_triple
+-- Compiling module adder
+
+Top level modules:
+	CPU
+
+} {} {}} D:/School/CO/HW5/F74064054/src/top_tb.v {1 {vlog -work work -stats=none D:/School/CO/HW5/F74064054/src/top_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module top_tb
+
+Top level modules:
+	top_tb
+
+} {} {}}
